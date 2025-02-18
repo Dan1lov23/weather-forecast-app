@@ -15,9 +15,17 @@ async function main() {
         const temp = data.current_weather.temperature;
         const windiSpeed = data.current_weather.windspeed;
         const interval = data.current_weather.interval;
+        const weatherCode = data.current_weather.weathercode; // код погоды иднетификатор облочности, освещения и тд
         document.getElementById('temp').innerHTML = temp;
         document.getElementById('windSpeed').innerHTML = windiSpeed;
         document.getElementById('interval').innerHTML = interval;
+        if (weatherCode === 0) {
+            document.getElementById('overcast').innerHTML = `<img src="../img/sun.png"/>`;
+        } else if (weatherCode === 1) {
+            document.getElementById('overcast').innerHTML = `<img src="../img/cloud.png" />`;
+        } else {
+            document.getElementById('overcast').innerHTML = `<img src="../img/drizzle.png" />`;
+        }
     } catch (e) {
         console.log("Ошибка соединения с сервером")
     }
