@@ -19,12 +19,16 @@ async function main() {
         document.getElementById('temp').innerHTML = temp;
         document.getElementById('windSpeed').innerHTML = windiSpeed;
         document.getElementById('interval').innerHTML = interval;
-        if (weatherCode === 0) {
-            document.getElementById('overcast').innerHTML = `<img src="../img/sun.png"/>`;
-        } else if (weatherCode === 1) {
-            document.getElementById('overcast').innerHTML = `<img src="../img/cloud.png" />`;
-        } else {
-            document.getElementById('overcast').innerHTML = `<img src="../img/drizzle.png" />`;
+        switch(weatherCode) {
+            case 0:
+                document.getElementById('overcast').innerHTML = `<img src="../img/sun.png"/>`;
+                break;
+            case 1:
+                document.getElementById('overcast').innerHTML = `<img src="../img/cloud.png" />`;
+                break;
+            case 2:
+                document.getElementById('overcast').innerHTML = `<img src="../img/drizzle.png" />`;
+                break;
         }
     } catch (e) {
         console.log("Ошибка соединения с сервером")
