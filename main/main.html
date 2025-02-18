@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="../icon/free-icon-clouds-and-sun-7587422.png">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="title">
+            <h1>My weather</h1><button onclick="themeChange()"><img src="../img/free-icon-moon-16909446.png"></button>
+        </div>
+        <div class="main">
+            <div class="cityInput">
+                <input placeholder="Enter city name" type="text" id="cityInput"/><button onclick="main()"><img src="../img/free-icon-check-1055183.png"/></button>
+            </div>
+            <div class="cityMain">
+                <img src="../img/free-icon-city-2169320.png">
+                <div class="city" id="city"></div>
+            </div>
+            <div class="tempMain">
+                <img src="../img/free-icon-thermometer-8200970.png"/>
+                <div class="temp" id="temp"></div>
+            </div>
+            <div class="windSpeedMain">
+                <img src="../img/free-icon-windy-11742598.png"/>
+                <div class="windSpeed" id="windSpeed"></div>
+            </div>
+            <div class="intervalMain">
+                <img src="../img/free-icon-text-spacing-3596365.png"/>
+                <div class="interval" id="interval"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

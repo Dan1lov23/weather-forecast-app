@@ -1,0 +1,83 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    button {
+        margin-left: 10px;
+        border: black solid 1px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+        transform: scale(1.1);
+    }
+}
+
+.mainContainer {
+    text-align: center;
+    margin-top: 200px;
+    background-color: whitesmoke;
+    border: whitesmoke solid 2px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.main {
+    img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+}
+
+
+.temp, .windSpeed, .city, .interval {
+    margin-left: 20px;
+}
+
+.tempMain, .windSpeedMain, .cityMain, .intervalMain {
+    font-size: 25px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    padding: 10px;
+}
+
+.cityInput {
+    button {
+        margin-left: 15px;
+        width: 32px;
+        height: 32px;
+        border: black solid 1px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        transition: background-color 0.3s, transform 0.2s;
+    }
+    button:hover {
+        transform: scale(1.1);
+    }
+    img {
+        text-align: center;
+        width: 10px;
+        height: 10px;
+        margin-left: 6px;
+    }
+    input {
+        margin-left: 30px;
+        width: 160px;
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+}
